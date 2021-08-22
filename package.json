@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/complex-reviver-float32",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Revive a JSON-serialized 64-bit complex number.",
   "license": "Apache-2.0",
   "author": {
