@@ -122,6 +122,22 @@ bool = ( w.im === z.im );
 
 <!-- /.references -->
 
+<!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
+
+<section class="related">
+
+* * *
+
+## See Also
+
+-   [`@stdlib/complex/float32`][@stdlib/complex/float32]: 64-bit complex number.
+-   [`@stdlib/complex/reviver-float64`][@stdlib/complex/reviver-float64]: revive a JSON-serialized 128-bit complex number.
+-   [`@stdlib/complex/reviver`][@stdlib/complex/reviver]: revive a JSON-serialized complex number.
+
+</section>
+
+<!-- /.related -->
+
 <!-- Section for all links. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
 
@@ -179,7 +195,15 @@ Copyright &copy; 2016-2021. The Stdlib [Authors][stdlib-authors].
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/complex-reviver-float32/main/LICENSE
 
+<!-- <related-links> -->
+
 [@stdlib/complex/float32]: https://github.com/stdlib-js/complex-float32
+
+[@stdlib/complex/reviver-float64]: https://github.com/stdlib-js/complex-reviver-float64
+
+[@stdlib/complex/reviver]: https://github.com/stdlib-js/complex-reviver
+
+<!-- </related-links> -->
 
 </section>
 
