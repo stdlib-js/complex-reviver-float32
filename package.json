@@ -1,0 +1,41 @@
+{
+  "name": "@stdlib/complex-reviver-float32",
+  "version": "0.0.0",
+  "description": "Revive a JSON-serialized 64-bit complex number.",
+  "license": "Apache-2.0",
+  "type": "module",
+  "main": "./index.mjs",
+  "homepage": "https://stdlib.io",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/stdlib-js/complex-reviver-float32.git"
+  },
+  "bugs": {
+    "url": "https://github.com/stdlib-js/stdlib/issues"
+  },
+  "keywords": [
+    "stdlib",
+    "stdtypes",
+    "utils",
+    "util",
+    "utilities",
+    "utility",
+    "complex",
+    "complex64",
+    "cmplx",
+    "json",
+    "reviver",
+    "revive",
+    "unmarshal",
+    "deserialize",
+    "from",
+    "convert",
+    "parse",
+    "object",
+    "obj"
+  ],
+  "funding": {
+    "type": "patreon",
+    "url": "https://www.patreon.com/athan"
+  }
+}
