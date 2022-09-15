@@ -18,7 +18,7 @@ limitations under the License.
 
 -->
 
-# Reviver
+# reviveComplex64
 
 [![NPM version][npm-image]][npm-url] [![Build Status][test-image]][test-url] [![Coverage Status][coverage-image]][coverage-url] <!-- [![dependencies][dependencies-image]][dependencies-url] -->
 
@@ -34,41 +34,33 @@ limitations under the License.
 
 <!-- Package usage documentation. -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/complex-reviver-float32
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
-To use in Observable,
-
 ```javascript
-reviver = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/complex-reviver-float32@umd/browser.js' )
+var reviveComplex64 = require( '@stdlib/complex-reviver-float32' );
 ```
 
-To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
-
-```javascript
-var reviver = require( 'path/to/vendor/umd/complex-reviver-float32/index.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/complex-reviver-float32@umd/browser.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.reviver;
-})();
-</script>
-```
-
-#### reviver( key, value )
+#### reviveComplex64( key, value )
 
 Revives a JSON-serialized 64-bit [complex number][@stdlib/complex/float32].
 
@@ -77,7 +69,7 @@ var parseJSON = require( '@stdlib/utils-parse-json' );
 
 var str = '{"type":"Complex64","re":5,"im":3}';
 
-var z = parseJSON( str, reviver );
+var z = parseJSON( str, reviveComplex64 );
 // returns <Complex64>
 ```
 
@@ -103,21 +95,16 @@ For details on the JSON serialization format, see [`Complex64`][@stdlib/complex/
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/complex-float32@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/utils-parse-json@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/complex-reviver-float32@umd/browser.js"></script>
-<script type="text/javascript">
-(function () {
+```javascript
+var Complex64 = require( '@stdlib/complex-float32' );
+var parseJSON = require( '@stdlib/utils-parse-json' );
+var reviveComplex64 = require( '@stdlib/complex-reviver-float32' );
 
 var z = new Complex64( 5.0, 3.0 );
 var str = JSON.stringify( z );
 // returns '{"type":"Complex64","re":5,"im":3}'
 
-var w = parseJSON( str, reviver );
+var w = parseJSON( str, reviveComplex64 );
 if ( w instanceof Error ) {
     throw w;
 }
@@ -129,11 +116,6 @@ bool = ( w.re === z.re );
 
 bool = ( w.im === z.im );
 // returns true
-
-})();
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -233,13 +215,13 @@ Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/complex-reviver-float32/main/LICENSE
 
+[@stdlib/complex/float32]: https://github.com/stdlib-js/complex-float32
+
 <!-- <related-links> -->
 
-[@stdlib/complex/float32]: https://github.com/stdlib-js/complex-float32/tree/umd
+[@stdlib/complex/reviver-float64]: https://github.com/stdlib-js/complex-reviver-float64
 
-[@stdlib/complex/reviver-float64]: https://github.com/stdlib-js/complex-reviver-float64/tree/umd
-
-[@stdlib/complex/reviver]: https://github.com/stdlib-js/complex-reviver/tree/umd
+[@stdlib/complex/reviver]: https://github.com/stdlib-js/complex-reviver
 
 <!-- </related-links> -->
 
