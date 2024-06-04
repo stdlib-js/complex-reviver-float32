@@ -1,3 +1,11 @@
+## Attention
+
+:warning: **Please use [@stdlib/complex-float32-reviver](https://github.com/stdlib-js/complex-float32-reviver) instead.** :warning:
+
+<br>
+
+* * *
+
 <!--
 
 @license Apache-2.0
